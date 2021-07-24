@@ -7,7 +7,7 @@ $cred=Get-Credential -credential bekkerw
 $packages = @(
     # ".\initialize-dev-environment.package.ps1",
     # ".\vs-installer.package.ps1"
-    ""
+    "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/wsl2-docker-installer.package.ps1"
 )
 
 Install-BoxstarterPackage -PackageName $packages -Credential $cred
