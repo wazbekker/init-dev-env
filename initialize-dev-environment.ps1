@@ -27,3 +27,5 @@ $installPackages = @(
 )
 
 Install-BoxstarterPackage -PackageName $installPackages -Credential $cred
+
+ubuntu2004
