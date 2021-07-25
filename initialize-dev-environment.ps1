@@ -4,42 +4,18 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 $cred=Get-Credential -credential bekkerw
 #$cred=Get-Credential -credential domain\username
 
+$uninstallPackages = @(
+    "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/uninstall-wsl2.ps1",
+    "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/uninstall-nodejs.ps1",
+    "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/uninstall-visualstudio2019.ps1",
+    "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/uninstall-vscode.ps1"
+    "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/uninstall-wsl2.ps1"
+)
+
+Install-BoxstarterPackage -PackageName $uninstallPackages -Credential $cred
+
 $packages = @(
-    # ".\initialize-dev-environment.package.ps1",
-    # ".\vs-installer.package.ps1"
-    "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/wsl2-installer.package.ps1"
+    "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-wsl2.ps1"
 )
 
 Install-BoxstarterPackage -PackageName $packages -Credential $cred
-
-# refresh the environment so that the new path variables take effect immediately
-# RefreshEnv.cmd
-
-# install npm global packages
-# npm install -g yarn@1.22.10
-# angular?
-# nx?
-
-# install vs code extensions
-# code --install-extension johnpapa.vscode-peacock
-# code --install-extension dbaeumer.vscode-eslint
-# code --install-extension codezombiech.gitignore
-# code --install-extension eamodio.gitlens
-# code --install-extension oderwat.indent-rainbow
-# code --install-extension firsttris.vscode-jest-runner
-# code --install-extension nrwl.angular-console
-# code --install-extension pflannery.vscode-versionlens
-# code --install-extension angular.ng-template
-
-# install oracle instant client, sqlplus and extra tools
-# install-oracleinstantclient.ps1 -done
-
-# install plsql developer
-# install-plsqldeveloper.ps1 -done
-
-# create local oracle db using docker
-# create-localoracledb.ps1
-
-
-
-
