@@ -8,4 +8,4 @@ choco install VirtualMachinePlatform --source windowsFeatures
 choco upgrade wsl2 --params="/Version:2 /Retry:true" --yes
 choco upgrade wsl-ubuntu-2004 --yes
 
-ubuntu2004
+# need to run ubuntu2004 on command line to setup distro in wsl and add default user and password

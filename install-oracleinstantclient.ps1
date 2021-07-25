@@ -35,9 +35,8 @@ if (Test-Path $envPathToAdd) {
     $oldpath = (Get-ItemProperty -Path $envRegistryKey -Name PATH).path
 
     $arrPath = $oldpath -split ';' | Where-Object { $_ -notMatch "^$regexAddPath\\?" }
-    # $env:Path = ($arrPath + $envPathToAdd) -join ';'
     
-    $newpath = ($arrPath + $envPathToAdd) -join ';' #"$oldpath;$envPathToAdd"
+    $newpath = ($arrPath + $envPathToAdd) -join ';'
 
     Set-ItemProperty -Path $envRegistryKey -Name PATH -Value $newPath
 }
