@@ -13,6 +13,7 @@ if (-not (Test-Path $extractTo)) {
 if (-not (Test-Path $tempDir)) {
     mkdir $tempDir
 }
+# TODO: check if these have already been unzipped to C:\oracle\instantclient_19_11 before redownloading
 
 $instantclientbasicurl = "https://download.oracle.com/otn_software/nt/instantclient/1911000/instantclient-basic-windows.x64-19.11.0.0.0dbru.zip"
 (New-Object System.Net.WebClient).DownloadFile($instantclientbasicurl, "$tempDir\instantclient-basic-windows.x64-19.11.0.0.0dbru.zip");
@@ -54,7 +55,7 @@ if (-not (Test-Path $networkAdminDir)) {
 }
 
 $tnsnamesurl = "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/tnsnames.ora"
-(New-Object System.Net.WebClient).DownloadFile($tnsnamesurl, "$networkAdminDir\");
+(New-Object System.Net.WebClient).DownloadFile($tnsnamesurl, "$networkAdminDir\tnsnames.ora");
 
 # cleanup temp directory where zip files were downloaded to
 if (Test-Path $tempDir) {
