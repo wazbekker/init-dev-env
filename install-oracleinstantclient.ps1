@@ -53,6 +53,9 @@ if (-not (Test-Path $networkAdminDir)) {
     mkdir $networkAdminDir
 }
 
+$tnsnamesurl = "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/tnsnames.ora"
+(New-Object System.Net.WebClient).DownloadFile($tnsnamesurl, "$networkAdminDir\");
+
 # cleanup temp directory where zip files were downloaded to
 if (Test-Path $tempDir) {
     Remove-Item -Path $tempDir -Recurse
