@@ -24,6 +24,7 @@ $installPackages = @(
     "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-dockerdesktop.ps1",
     "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-oracleinstantclient.ps1",
     # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-plsqldeveloper.ps1",
+    "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/start-dockerdesktop.ps1",
     "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/create-localoracledb.ps1"
     # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-misc.ps1"
 )
