@@ -16,6 +16,7 @@ $installPackages = @(
     # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-git.ps1",
     # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-vscode.ps1",
     # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-visualstudio2019.ps1",
+    # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-abpcli.ps1",
     # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-nodejs.ps1",
     # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-plsqldeveloper.ps1",
     # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-misc.ps1"
