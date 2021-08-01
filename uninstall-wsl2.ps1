@@ -5,4 +5,4 @@ choco uninstall Microsoft-Windows-Subsystem-Linux --source windowsFeatures
 choco uninstall VirtualMachinePlatform --source windowsFeatures
 
 choco uninstall wsl2 --yes
-choco uninstall wsl-ubuntu-2004 --yes
+# choco uninstall wsl-ubuntu-2004 --yes

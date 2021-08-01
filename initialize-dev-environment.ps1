@@ -10,19 +10,28 @@ $cred=Get-Credential -credential bekkerw
 $installPackages = @(   
     "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-wsl2.ps1",
     "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-dockerdesktop.ps1",
-    "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-oracleinstantclient.ps1",    
-    "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/start-dockerdesktop.ps1",
-    "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/create-localoracledb.ps1"
+    # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-oracleinstantclient.ps1",    
+    # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/start-dockerdesktop.ps1",
+    # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/create-localoracledb.ps1",
+    # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-plsqldeveloper.ps1"
+    
     # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-git.ps1",
     # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-vscode.ps1",
     # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-visualstudio2019.ps1",
     # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-abpcli.ps1",
-    # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-nodejs.ps1",
-    # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-plsqldeveloper.ps1",
+    # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-nodejs.ps1",    
     # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-misc.ps1"
 )
 
 Install-BoxstarterPackage -PackageName $installPackages -Credential $cred
+
+RefreshEnv
+
+.\install-oracleinstantclient
+.\start-dockerdesktop
+.\create-localoracledb
+.\install-plsqldeveloper
+
 
 # TODO: Still need to test uninstalling
 # $uninstallPackages = @(
