@@ -10,10 +10,10 @@ $cred=Get-Credential -credential bekkerw
 
 # comment out or uncomment urls below to install software needed
 $installPackages = @(   
-    # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/choco-install/install-wsl2.ps1",
-    # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/choco-install/install-dockerdesktop.ps1"        
+    "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/choco-install/install-wsl2.ps1",
+    "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/choco-install/install-dockerdesktop.ps1"        
     # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/choco-install/install-git.ps1",
-    "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/choco-install/choco-install/install-vscode.ps1"
+    # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/choco-install/choco-install/install-vscode.ps1"
     # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/choco-install/install-visualstudio2019.ps1",
     # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/choco-install/install-nodejs.ps1",    
     # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/choco-install/install-misc.ps1"
