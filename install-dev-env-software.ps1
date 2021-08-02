@@ -20,16 +20,3 @@ $installPackages = @(
 )
 
 Install-BoxstarterPackage -PackageName $installPackages -Credential $cred
-
-
-# TODO: Still need to test uninstalling
-# $uninstallPackages = @(
-#     "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/uninstall/uninstall-wsl2.ps1",
-#     "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/uninstall/uninstall-dockerdesktop.ps1",
-#     "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/uninstall/uninstall-nodejs.ps1",
-#     "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/uninstall/uninstall-visualstudio2019.ps1",
-#     "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/uninstall/uninstall-vscode.ps1"
-#     "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/uninstall/uninstall-git.ps1"
-# )
-
-# Install-BoxstarterPackage -PackageName $uninstallPackages -Credential $cred
