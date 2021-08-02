@@ -1,8 +1,4 @@
-choco upgrade vscode --yes
 
-RefreshEnv.cmd
-
-# install vs code extensions
 code --install-extension johnpapa.vscode-peacock
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension codezombiech.gitignore
