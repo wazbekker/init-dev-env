@@ -1,3 +1,5 @@
+# see https://community.chocolatey.org/packages?q= for other packages to install 
+
 choco upgrade microsoft-windows-terminal --yes
 choco upgrade notepadplusplus.install --yes
 choco upgrade powershell-core --yes
