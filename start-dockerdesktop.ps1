@@ -38,7 +38,6 @@ while ((Get-Date) -le $startTimeout)
     }
     catch 
     {
-
         if (($_ -ilike "*error during connect*") -or ($_ -ilike "*errors pretty printing info*")  -or ($_ -ilike "*Error running info command*"))
         {
             Write-Output "$((Get-Date).ToString("HH:mm:ss")) -`t Docker Desktop startup not yet completed, waiting and checking again"
