@@ -10,10 +10,10 @@ $cred=Get-Credential -credential bekkerw
 
 # comment out or uncomment urls below to install software needed
 $installPackages = @(   
-    "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-wsl2.ps1",
-    "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-dockerdesktop.ps1"        
+    # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-wsl2.ps1",
+    # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-dockerdesktop.ps1"        
     # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-git.ps1",
-    # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-vscode.ps1",
+    "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-vscode.ps1"
     # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-visualstudio2019.ps1",
     # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-abpcli.ps1",
     # "https://raw.githubusercontent.com/wazbekker/init-dev-env/master/install-nodejs.ps1",    
