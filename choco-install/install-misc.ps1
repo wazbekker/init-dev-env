@@ -11,4 +11,4 @@ choco upgrade drawio --yes
 choco upgrade googlechrome --yes
 choco upgrade lastpass-chrome --yes
 choco upgrade openvpn-connect --yes
-choco upgrade autohotkey --yes
+# choco upgrade autohotkey --yes
