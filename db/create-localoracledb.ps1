@@ -1,8 +1,8 @@
 # pull docker image from docker hub for local oracle db
-&docker pull wazbekker/oracledatabase:12.2.0.1-se2-extended
+&docker pull wazbekker/oracledatabase:12.2.0.1-se2-ext
 
 # start container using oracle docker image
-&docker run -d --name ora122 -p 1521:1521 -p 5500:5500 -v oradata:/opt/oracle/oradata wazbekker/oracledatabase:12.2.0.1-se2-extended
+&docker run -d --name ora122 -p 1521:1521 -p 5500:5500 -v oradata:/opt/oracle/oradata wazbekker/oracledatabase:12.2.0.1-se2-ext
 
 # wait until container is up and running before executing the next steps
 $startTimeout = [DateTime]::Now.AddSeconds(90)
@@ -30,7 +30,7 @@ if ($timeoutHit -eq $true)
 $script = "scripts-to-exec.pdc"
 
 # login to local oracle db as sysdba and run the create-user.sql script
-&sqlplus sys/Pass123!@local_sys as sysdba @$script
+&sqlplus sys/oracle@local_sys as sysdba @$script
 
 # &sqlplus mtp/mtp@local
 # $sqlplus gccmod/gccmod@local
