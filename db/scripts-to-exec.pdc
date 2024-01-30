@@ -1,4 +1,5 @@
 @create-user.sql mtp mtp;
+@create-user.sql ets ets;
 @create-user.sql gccmod gccmod;
 
 exit
